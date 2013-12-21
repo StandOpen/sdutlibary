@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="50dip"
+  android:orientation="horizontal"
+  android:background="@drawable/item"
+  >
+  <ImageView
+      
+      android:layout_width="50dip"
+      android:layout_height="50dip"
+      android:layout_gravity="center"
+      android:layout_centerVertical="true"
+      android:id="@+id/messagegedetail_rov_icon"
+  />
+  <RelativeLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_marginLeft="55dip"
+  android:layout_marginRight="40dip"
+  >
+  
+     
+  <TextView 
+      android:id="@+id/tip"
+      android:textSize="8pt"
+      android:paddingLeft="10dip"
+      android:paddingTop="5dip"
+      android:textColor="@android:color/black"
+      android:singleLine="false"
+      android:layout_width="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_height="50dip"/>
+     </RelativeLayout>
+</RelativeLayout>

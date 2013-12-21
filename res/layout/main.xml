@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@android:id/tabhost"
+   android:background="@android:color/white"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent">
+   
+   <LinearLayout 
+  	  android:orientation="vertical"
+  	  android:layout_width="fill_parent"
+   	  android:layout_height="fill_parent">
+   	 <RelativeLayout
+        android:id="@+id/head"
+        android:orientation="vertical" 
+        android:background="@drawable/title_bg"
+        android:layout_width="fill_parent" 
+        android:layout_height="50dip">
+      
+         <TextView 
+           android:id="@+id/readername"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:gravity="center"
+         android:textSize="8pt"
+         android:background="@drawable/login"
+         android:textColor="#ffff0000"
+        />
+     <TextView 
+           android:id="@+id/type"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         
+         android:textSize="10pt"
+         android:textColor="@android:color/white"
+         android:text="书目检索"/>
+     <ImageButton 
+         android:id="@+id/share"
+          android:layout_width="50dip"
+         android:layout_height="35dip"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="5dip"
+         android:background="@drawable/menu"/>
+    </RelativeLayout>
+      <FrameLayout
+         android:id="@android:id/tabcontent"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="1">
+      </FrameLayout>
+      <TabWidget
+         android:id="@android:id/tabs"
+         android:layout_width="fill_parent"
+         android:layout_alignParentBottom="true"
+         android:layout_height="55dip"/>  
+        
+	</LinearLayout>
+</TabHost>

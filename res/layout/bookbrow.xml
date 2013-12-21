@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/talk_layout"
+    android:background="@android:color/white"
+    > 
+    <Button 
+            android:id="@+id/gotosearch"
+            android:text="点击获取信息"
+            android:background="@drawable/button"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip"/>
+<ListView 
+android:id="@+id/list"
+     android:layout_below="@id/gotosearch"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:cacheColorHint="#00000000"
+
+    /> 
+</RelativeLayout>

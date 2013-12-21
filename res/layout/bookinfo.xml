@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Welcome_Layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+       <RelativeLayout
+        android:id="@+id/read_top"
+        android:orientation="vertical" 
+        android:background="@drawable/title_bg"
+        android:layout_width="fill_parent" 
+        android:layout_height="50dip">
+        <ImageButton 
+            android:id="@+id/back"
+         android:layout_width="60dip"
+         android:layout_height="35dip"
+         android:layout_centerVertical="true"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="5dip"
+         android:background="@drawable/left"/>
+        <Button 
+            android:id="@+id/preg"
+        android:layout_width="60dip"
+         android:layout_height="35dip"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="5dip"
+         android:background="@drawable/right"
+         android:textColor="@android:color/white"
+        
+         />
+     <TextView 
+         android:id="@+id/name_book"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:layout_marginLeft="70dip"
+         android:layout_marginRight="60dip"
+         android:textSize="8pt"
+         android:textColor="@android:color/white"
+        />
+    </RelativeLayout>
+   <ListView 
+    android:id="@+id/list"
+     android:layout_below="@id/read_top"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:cacheColorHint="#00000000"
+    android:clickable="true"
+    />
+</RelativeLayout>

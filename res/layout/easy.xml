@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:background="@android:color/white"
+     >
+    <RelativeLayout 
+        android:id="@+id/layout_input"
+        android:layout_marginTop="5dip"
+       android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    
+        <EditText 
+            android:id="@+id/input"
+            android:hint="请输入检索的书名"
+            android:layout_marginRight="70dip"
+          android:background="@drawable/edit_bg"
+          android:layout_marginLeft="5dip"
+     android:layout_width="fill_parent"
+    android:layout_height="40dip"/>
+        
+        <Button 
+            android:id="@+id/gotosearch"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:text="搜索"
+    android:layout_width="60dip"
+    android:layout_height="40dip"/>
+    </RelativeLayout>
+    <ListView 
+    android:id="@+id/list"
+     android:layout_below="@id/layout_input"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:cacheColorHint="#00000000"
+    
+    />
+</RelativeLayout>

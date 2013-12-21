@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/close1"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    >
+<RelativeLayout 
+    android:id="@+id/head"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+   
+    <ImageView 
+       android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:src="@drawable/logo"
+        android:id="@+id/warning" />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/warning"
+        android:layout_marginLeft="10dip"
+        android:textColor="@android:color/white"
+        android:textSize="9pt"
+        android:text="登录"/>
+</RelativeLayout>
+    
+<RelativeLayout 
+    android:id="@+id/center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/head"
+   android:layout_marginTop="10dip"
+  >
+    <EditText 
+            android:id="@+id/number"
+            android:hint="请输入学号"
+            android:background="@drawable/edit_bg"
+            android:layout_width="fill_parent"
+           android:layout_height="45dip"/>
+        <EditText 
+            android:id="@+id/pass"
+            android:layout_below="@id/number"
+            android:layout_marginTop="10dip"
+             android:background="@drawable/edit_bg"
+            android:hint="请输入密码"
+            android:password="true"
+     android:layout_width="fill_parent"
+    android:layout_height="45dip"/>
+</RelativeLayout>
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/center"
+    android:layout_marginTop="10dip"
+   
+  >
+    <Button 
+        android:id="@+id/cancel"
+        android:layout_width="100dip"
+        android:layout_marginLeft="10dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/cancel"/>
+    <Button 
+        android:id="@+id/ok"
+        android:layout_width="100dip"
+        android:layout_marginRight="10dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ok"/>
+
+</RelativeLayout>
+</RelativeLayout>

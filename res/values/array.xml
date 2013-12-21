@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select">
+        <item >任意词</item>
+        <item >题名</item>
+        <item >责任者</item>
+        <item >主题词</item>
+        <item >索书号</item>
+        <item >出版社</item>
+        <item >丛书名</item>
+    </string-array>
+    
+</resources> 
